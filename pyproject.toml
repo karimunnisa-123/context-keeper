@@ -1,0 +1,20 @@
+[project]
+name = "context-keeper"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "karimunnisa-123", email = "karimunnisa2007@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastmcp>=3.4.7",
+    "mcp[cli]<2",
+]
+
+[project.scripts]
+context-keeper = "context_keeper:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
